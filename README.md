@@ -1,2 +1,6 @@
-# Node.js-Textbook
-Node.js 교과서(조현영 지음) 책을 읽고 공부하는 레포
+# Code
+📒 공부, 기록, 예제코드
+## Languages
+### Node.js
+- <a href="">node.js-textbook</a> - <a href="http://www.yes24.com/Product/Goods/91213376">Node.js 교과서</a>
+- 
