@@ -35,7 +35,7 @@ SQL 연동시 config/config.json을 참조하여 설정구성
   - database : 데이터베이스 이름
 - process.env.NODE_ENV 와 연동 (기본값 "development")
 
-▶️ config/config.json 
+▶️ config/config.json (MySQL 계정 패스워드 노출안되게 주의)
 
 `npm start` 명령어로 서버를 실행후 데이터베이스 연결 확인
 
