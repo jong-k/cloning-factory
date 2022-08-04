@@ -1,3 +1,6 @@
+// sequelize init 했을때 디폴트는 config.json 파일이지만
+// dotenv 사용을 위해 config.js로 변환했음
+
 require('dotenv').config();
 const env = process.env;
 
