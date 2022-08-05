@@ -144,3 +144,28 @@ update 메서드 사용
 destroy 메서드 사용
 
 ### 6-5. 관계 쿼리 (JOIN)
+include
+
+### 6-6. 그냥 SQL 사용하기
+```js
+const [result, metadata] = await sequelize.query('SELECT * from comments');
+console.log(result);
+```
+
+## 7. 쿼리 수행
+사용자 정보를 등록하고, 사용자가 등록한 댓글을 가져오는 서버 만들기
+
+- 모델에서 데이터를 받아 페이지 렌더링
+- JSON 형식 데이터 받아오기
+
+### 7-1. 작성 파일
+- views/sequelize.html
+- views/error.html
+- public/sequelize.js
+- app.js
+- routes/index.js
+- routes/users.js
+- routes/comments.js
+
+### 7-2. 추가 과제
+- 유저 삭제 기능 구현
