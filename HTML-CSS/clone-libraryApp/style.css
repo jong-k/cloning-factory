@@ -1,3 +1,165 @@
 * {
   box-sizing: border-box;
 }
+
+:root {
+  --yellow: #FFCE33;
+}
+/*
+  글로벌 패딩(각 컴포넌트에 적용): 좌우 15px
+
+ */
+
+.container {
+  width: 500px;
+  height: 100vh;
+  position: relative;
+}
+
+header {
+  height: 15%;
+  padding: 0 15px 30px 15px;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--yellow);
+  
+}
+
+header div:nth-child(2) {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 2;
+  top: 95px;
+  margin-left: 25px;
+  
+}
+
+.search--input {
+  padding: 0 20px;
+  display: block;
+  width: 450px;
+  height: 55px;
+  border-radius: 20px;
+  border: none;
+  border-bottom: solid 1px grey;
+  font-size: 17px;
+  outline: none;
+  box-shadow: 0 6px 6px -6px #666
+}
+
+.search--input::placeholder {
+  opacity: 0.5;
+}
+
+.search a {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  text-decoration: none;
+}
+
+.search--btn {
+  opacity: 0.2;
+  position: absolute;
+}
+
+main {
+  margin-top: 20px;
+  padding: 25px 15px;
+}
+
+.book-today__title {
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.book-today__cover {
+  width: 130px;
+}
+
+.book-today__info {
+  display: flex;
+}
+
+.book-today__column:last-child {
+  width: 55%;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.book-today__book-name {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.book-today__author {
+  font-size: 17px;
+  opacity: 0.2;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.book-today__star-box {
+  margin-bottom: 15px;
+}
+
+.book-today__star-box span i {
+  color: var(--yellow);
+}
+
+.book-today__star-box span i:last-child {
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.book-today__tag-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.book-today__tag {
+  font-size: 15px;
+  font-weight: 600;
+  padding: 7px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.book-today__tag:first-child {
+  margin-right: 10px;
+}
+
+.book-today__btn-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.book-today__bookmark-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--yellow);
+}
+
+.book-today__buy-btn {
+  font-size: 17px;
+  padding: 0 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+}
