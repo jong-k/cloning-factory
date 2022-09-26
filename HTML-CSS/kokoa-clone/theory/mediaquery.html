@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Media Query</title>
+    <style>
+      body {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+      }
+      div {
+        background-color: teal;
+        width: 200px;
+        height: 200px;
+      }
+      @media screen and (min-width: 601px) and (max-width: 1200px) and (orientation: landscape) {
+        div {
+          background-color: wheat;
+        }
+        span {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <span>휴대폰을 가로로 돌려보세요!</span>
+  </body>
+</html>

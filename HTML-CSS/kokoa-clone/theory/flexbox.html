@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>learn flexbox</title>
+    <style>
+      body {
+        display: flex;
+        height: 100vh;
+        /*
+        flex-direction: column은 main axis를 수직으로, cross axis를 수평으로 바꿈
+        그로 인해 justify-content도 수직으로, align-items도 수평으로 바뀜
+         */
+        justify-content: space-around;
+        align-items: center;
+        /*flex-wrap: wrap;*/
+      }
+      div {
+        display: flex;
+        width: 300px;
+        height: 300px;
+        font-size: 28px;
+        color: white;
+        justify-content: center;
+        align-items: center;
+      }
+      .first,
+      .third {
+        background: teal;
+      }
+      .second {
+        background: wheat;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="first">1</div>
+    <div class="second">2</div>
+    <div class="third">3</div>
+  </body>
+</html>
