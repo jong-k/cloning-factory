@@ -12,12 +12,12 @@
 
 .container {
   width: 500px;
-  height: 100vh;
+  height: 110vh;
   position: relative;
 }
 
 header {
-  height: 15%;
+  height: 11%;
   padding: 0 15px 30px 15px;
   
   display: flex;
@@ -38,9 +38,8 @@ header div:nth-child(2) {
   justify-content: center;
   position: absolute;
   z-index: 2;
-  top: 95px;
+  top: 62px;
   margin-left: 25px;
-  
 }
 
 .search--input {
@@ -162,4 +161,72 @@ main {
   border-radius: 5px;
   background-color: black;
   color: white;
+}
+
+.harry-potter {
+  margin-top: 20px;
+}
+
+.hp__title {
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.hp__horizon-list {
+  height: 200px;
+  display: flex;
+  overflow-x: auto;
+}
+
+.hp__book-item {
+  margin-right: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hp__book-item img {
+  width: 110px;
+  height: 150px;
+  margin-bottom: 15px;
+}
+
+.hp__star-box span {
+  font-size: 14px;
+  color: var(--yellow);
+}
+
+.popular-authors {
+  margin-top: 15px;
+}
+
+.pa__header {
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.pa__article {
+  display: flex;
+}
+
+.pa__author-column {
+  margin-right: 20px;
+}
+
+.pa__author-name {
+  font-size: 21px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.pa__author-img {
+  width: 130px;
+  height: 170px;
+}
+
+.pa__author-info {
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.3);
 }
