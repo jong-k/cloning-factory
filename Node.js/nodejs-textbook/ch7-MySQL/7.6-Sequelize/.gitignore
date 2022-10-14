@@ -1,8 +1,0 @@
-.idea
-.vscode
-.vs
-.env
-
-*.exe
-
-node_modules
